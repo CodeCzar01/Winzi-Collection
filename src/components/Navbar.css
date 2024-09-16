@@ -1,0 +1,93 @@
+/* Making the navbar background more transparent */
+.navbar-transparent {
+  background-color: rgba(52, 58, 64, 0.5); /* More transparent background */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand span {
+  font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+
+/* Centering the navigation links */
+.navbar-nav {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+/* Spacing between nav-links and icons */
+.ml-auto {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px; /* Adds space between nav-links and icons */
+  margin-right: 70px; /* Adds space between the icons and the right edge of the screen */
+}
+
+/* Dropdown styling for the Person icon */
+.person-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: white;
+}
+
+.person-dropdown .dropdown-menu {
+  background-color: rgba(52, 58, 64, 0.9); /* Slight transparency for dropdown */
+}
+
+.person-dropdown .dropdown-item {
+  color: white;
+}
+
+.person-dropdown .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+  }
+}

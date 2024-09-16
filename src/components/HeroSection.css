@@ -1,0 +1,154 @@
+/* Ensure the hero section covers the entire viewport */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Ensure carousel images cover the full viewport without distortion */
+.carousel img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Background overlay for text contrast */
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Wrapper for both search and caption */
+.overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for content */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px; /* Padding to prevent overflow on smaller screens */
+  max-width: 800px; /* Max width to constrain content on large screens */
+}
+
+/* Style the search form */
+.search-form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem; /* Space between search bar and caption */
+}
+
+/* Styling for search input */
+.search-form .form-control {
+  flex: 1;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Reduced transparency for input background */
+}
+
+/* Styling for search button */
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color:#343a40;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #495057;
+  transform: translateY(-2px);
+}
+
+/* Center and style the carousel text directly below the search bar */
+.custom-caption {
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 6px 20px rgba(0, 0, 0, 0.9);
+  font-size: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Button styling in the hero section */
+.custom-caption .btn-primary {
+  background-color: #ff6f61;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem; /* Space between caption text and button */
+}
+
+.custom-caption .btn-primary:hover {
+  background-color: #ff8878;
+  transform: translateY(-3px);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .custom-caption {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .search-form {
+    width: 90%;
+  }
+
+  .custom-caption {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .content-container {
+    align-items: center; /* Ensure horizontal centering */
+    padding-top: 10%; /* Adjust padding to position content vertically */
+  }
+
+  .search-form {
+    width: 80%; /* Adjust search bar width for larger screens */
+  }
+
+  .custom-caption {
+    margin-top: 2rem; /* Increase margin between search and caption */
+  }
+}

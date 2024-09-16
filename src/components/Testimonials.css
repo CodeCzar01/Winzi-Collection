@@ -1,0 +1,110 @@
+/* General Testimonial Page Styles */
+.testimonial-page {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Ensures horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 20px; /* Adjusted spacing between cards */
+  padding: 10px 0;
+  position: relative;
+}
+
+.testimonial-carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Testimonial Image */
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Testimonial Review */
+.testimonial-review {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Carousel Controls */
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .carousel-control {
+    display: none;
+  }
+}
