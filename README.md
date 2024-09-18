@@ -51,12 +51,12 @@ Contact
 For any inquiries or support, feel free to reach out via email: zionthompson528@gmail.com
 
 ### Screenshots
-![Hero-Section1](./Assets/ScreenShots/Herosection1.png)
-![Hero-Section2](./Assets/ScreenShots/Herosection2.png)
-![Products-Section1](./Assets/ScreenShots/Products1.png)
-![Products-Section2](./Assets/ScreenShots/Products2.png)
-![About-Section](./Assets/ScreenShots/About.png)
-![Contact-Section](./Assets/ScreenShots/Contact.png)
-![Testimonial-Section](./Assets/ScreenShots/Testimonial.png)
-![Blog-Section](./Assets/ScreenShots/Blog.png)
-![Newletter/Footer-Section](./Assets/ScreenShots/Newletter-Footer.png)
+![Hero-Section1](./public/Assets/ScreenShots/Herosection1.png)
+![Hero-Section2](./public/Assets/ScreenShots/Herosection2.png)
+![Products-Section1](./public/Assets/ScreenShots/Products1.png)
+![Products-Section2](./public/Assets/ScreenShots/Products2.png)
+![About-Section](./public/Assets/ScreenShots/About.png)
+![Contact-Section](./public/Assets/ScreenShots/Contact.png)
+![Testimonial-Section](./public/Assets/ScreenShots/Testimonial.png)
+![Blog-Section](./public/Assets/ScreenShots/Blog.png)
+![Newletter/Footer-Section](./public/Assets/ScreenShots/Newletter-Footer.png)
