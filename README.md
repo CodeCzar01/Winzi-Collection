@@ -1,12 +1,17 @@
 # Winzi Collection
 
-**Winzi Collection** is a fashion brand website where users can create accounts and shop for fashion products. The site is responsive and designed with a modern interface to deliver a smooth user experience.
+Winzi Collection is a fashion brand website where users can create accounts and shop for fashion products. The site is responsive and designed with a modern interface to deliver a smooth user experience.
 
 ## Features
-- Responsive design that works on all screen sizes
-- User account creation for personalized shopping experience
+- Professional, interactive and Responsive design that works on all screen sizes
 - Hero Section with Carousel**: The hero section includes a carousel with two sliding sections.
-- Fashion product listing and cart functionality (coming soon)
+- Fashion product listing and cart
+- Simple Login/Signup form for users
+
+  Future Enhancements:
+- Back-end integration for shopping cart and product management
+- Secure authentication system
+- Product reviews and ratings
 
 ## Technologies Used
 - **React**: JavaScript library for building user interfaces
@@ -35,14 +40,6 @@ To run this project locally, follow these steps:
    npm start
 
 Open your browser and go to http://localhost:3000.
-
-Future Enhancements:
-- Back-end integration for shopping cart and product management
-- Secure authentication system
-- Product reviews and ratings
-
-Contributing
-Feel free to fork this project and submit pull requests for enhancements.
 
 License
 This project is licensed under the MIT License.
