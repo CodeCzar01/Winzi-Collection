@@ -1,6 +1,6 @@
 # Winzi Collection
 
-Winzi Collection is a fashion brand website where users can shop for fashion products. The site is responsive and designed using react with a modern interface to deliver a smooth user experience.
+Winzi Collection is a fashion brand where users can shop for fashion products. The site is responsive and designed using react with a modern interface to deliver a smooth user experience.
 
 ## Features
 - Professional, interactive and Responsive design that works on all screen sizes
